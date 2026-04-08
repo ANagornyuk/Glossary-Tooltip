@@ -244,7 +244,7 @@ $databases['default']['default'] = array (
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+$settings['config_sync_directory'] = DRUPAL_ROOT . '/sync';
 
 /**
  * Settings:
@@ -733,6 +733,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  */
+$settings['trusted_host_patterns'][] = '^glossary_tooltip\.localhost';
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -852,4 +853,3 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_-PTbCyfALieYOLh-EelgjKTVkwEH1CDiIU2fEpIrWBk9SoV6QJqZ0RarZZ1j-u40zhRXG_cdzQ/sync';
