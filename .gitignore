@@ -1,0 +1,84 @@
+# Ignore configuration files that may contain sensitive information.
+.idea
+.vagrant
+backup
+index.html
+.vscode
+
+.web
+
+# Ignore binaries.
+/bin
+
+# Ignore non-custom parts of Drupal.
+/web/core
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+/web/libraries
+/web/sites/default/files
+/web/sites/default/files/.htaccess
+/web/sites/default/files/private
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.htaccess
+/web/.ht.router.php
+/web/autoload.php
+/web/index.php
+/web/robots.txt
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/default/services.yml
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/simpletest/Assert.php
+/web/sites/simpletest/TestCase.php
+/web/update.php
+/web/web.config
+
+#Ignore local settings.
+settings.local.php
+
+# Docker override file.
+docker-compose.override.yml
+
+# Ignore Composer-managed dependencies.
+## Other
+# drush
+vendor
+node_modules
+html/node_modules
+web/_ignore
+
+## OS specific mess.
+Thumbs.db
+.DS_Store
+.docker-sync/
+
+## eclipse
+.project
+.buildpath
+/.settings
+
+## NetBeans
+nbproject
+toolbox/.secrets/id_rsa.tandem
+
+/.csslintrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.json
+/.ht.router.php
+/.htaccess
+/INSTALL.txt
+/README.txt
+/autoload.php
+/example.gitignore
+/index.php
+/robots.txt
+/update.php
+/web.config
