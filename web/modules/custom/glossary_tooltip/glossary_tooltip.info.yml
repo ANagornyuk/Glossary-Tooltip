@@ -1,0 +1,6 @@
+name: Glossary Tooltip
+type: module
+description: The words correspondent / identical to the items included in the glossary vocabulary are highlighted
+core_version_requirement: ^9
+dependencies:
+  - drupal:system
