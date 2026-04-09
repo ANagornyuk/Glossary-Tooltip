@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function glossary_tooltip_preprocess_node(&$variables) {
+  // Attach library to node.
+  $variables['#attached']['library'][] = 'glossary_tooltip/glossary_tooltip';
+
+}

@@ -1,0 +1,6 @@
+glossary_tooltip:
+  js:
+    js/glossary_tooltip.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
