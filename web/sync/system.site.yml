@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: ba80064b-ea1a-44d1-871e-c60afb664450
-name: Drupal
-mail: ''
+name: 'Glossary Tooltip'
+mail: a.nag@ukr.net
 slogan: ''
 page:
   403: ''

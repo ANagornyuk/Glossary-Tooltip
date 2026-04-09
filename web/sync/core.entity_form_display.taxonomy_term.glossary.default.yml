@@ -7,14 +7,13 @@ dependencies:
     - taxonomy.vocabulary.glossary
   module:
     - path
-    - text
 id: taxonomy_term.glossary.default
 targetEntityType: taxonomy_term
 bundle: glossary
 mode: default
 content:
-  description:
-    type: text_textarea
+  field_description:
+    type: string_textarea
     weight: 1
     region: content
     settings:
@@ -43,4 +42,4 @@ content:
       display_label: true
     third_party_settings: {  }
 hidden:
-  field_description: true
+  description: true
