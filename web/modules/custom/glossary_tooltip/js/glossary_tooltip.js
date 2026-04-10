@@ -5,6 +5,7 @@
     attach: function (context, settings) {
       // Get text content of the node.
       const node_content_el = $('.node__content > .field--name-body > p', context);
+      node_content_el.tooltip();
       let text = node_content_el.text();
 
       // If no content, nothing to do here.
@@ -24,7 +25,7 @@
       // Go through all glossaries, find it in text, replace to span for tooltip.
       for (let item of glossary_items) {
         let regex = new RegExp(`(\\b${item.name}\\b)`, 'gi');
-        new_text = new_text.replace(regex, '<span class="tooltip">$1</span>');
+        new_text = new_text.replace(regex, '<span class="tooltip" title="dummy test">$1</span>');
       }
 
       // If content of node has changed, rewrite it.
