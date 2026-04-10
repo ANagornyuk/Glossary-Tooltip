@@ -23,7 +23,7 @@
 
       // Go through all glossaries, find it in text, replace to span for tooltip.
       for (let item of glossary_items) {
-        let regex = new RegExp(`(${item.name})`, 'gi');
+        let regex = new RegExp(`(\\b${item.name}\\b)`, 'gi');
         new_text = new_text.replace(regex, '<span class="tooltip">$1</span>');
       }
 

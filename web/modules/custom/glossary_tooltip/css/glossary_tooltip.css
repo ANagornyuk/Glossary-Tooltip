@@ -1,3 +1,4 @@
 span.tooltip {
   text-decoration: underline solid #00ff90 3px;
+  background-color: rgb(0 255 144 / 0.1);
 }
