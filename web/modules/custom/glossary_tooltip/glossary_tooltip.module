@@ -25,7 +25,7 @@ function glossary_tooltip_preprocess_node(&$variables) {
     $glossary_items[] = [
       'name' => $term_entity->getName(),
       'description' => $term_entity->get('field_description')->value ?? '',
-      'url' => $term_entity->toUrl()->getInternalPath()
+      'url' => $term_entity->toUrl()->toString()
     ];
   }
 
