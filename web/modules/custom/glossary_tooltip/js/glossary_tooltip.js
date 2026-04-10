@@ -19,14 +19,18 @@
         return;
       }
 
+      let new_text = text;
+
       // Go through all glossaries, find it in text, replace to span for tooltip.
       for (let item of glossary_items) {
-        item.name;
-
+        let regex = new RegExp(`(${item.name})`, 'gi');
+        new_text = new_text.replace(regex, '<span class="tooltip">$1</span>');
       }
 
-
-
+      // If content of node has changed, rewrite it.
+      if (new_text !== text) {
+        node_content_el.html(new_text);
+      }
 
     }
   }

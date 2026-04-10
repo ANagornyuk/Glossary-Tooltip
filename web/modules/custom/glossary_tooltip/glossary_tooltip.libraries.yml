@@ -4,3 +4,6 @@ glossary_tooltip:
   dependencies:
     - core/jquery
     - core/drupal
+  css:
+    component:
+      css/glossary_tooltip.css: {}
