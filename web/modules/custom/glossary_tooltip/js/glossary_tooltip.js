@@ -25,14 +25,15 @@
           return tooltip;
         }
       });
-      let text = node_content_el.text();
+
+      const text = node_content_el.text();
 
       // If no content, nothing to do here.
       if (!text) {
         return;
       }
 
-      let glossary_items = settings.glossaryItems;
+      const glossary_items = settings.glossaryItems;
 
       // If no glossary items, nothing to do here.
       if (glossary_items.length === 0) {
