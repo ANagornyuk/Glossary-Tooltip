@@ -5,7 +5,7 @@ use Drupal\taxonomy\TermStorageInterface;
 /**
  * Fill up vocabulary by dummy values.
  */
-function glossary_tooltip_update_9001(&$variables) {
+function glossary_tooltip_install(&$variables) {
 
   $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
   if (!$term_storage instanceof TermStorageInterface) {
