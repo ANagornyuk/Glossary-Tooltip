@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\node\NodeInterface;
 use Drupal\taxonomy\TermInterface;
 
 /**
@@ -31,4 +33,12 @@ function glossary_tooltip_preprocess_node(&$variables) {
 
   $variables['#attached']['drupalSettings']['glossaryItems'] = $glossary_items;
 
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function glossary_tooltip_node_view(array &$build, NodeInterface $node, EntityViewDisplayInterface $display, $view_mode) {
+  // Clear cache when glossary is updated.
+  $build['#cache']['tags'][] = 'taxonomy_term_list:glossary';
 }
